@@ -29,10 +29,11 @@ class ChatRequest(BaseModel):
 
     model_config = ConfigDict(json_schema_extra={
         "examples": [{
-            "message": "I have a vintage walnut table with water rings. Help me restore it.",
+            "message": "I have a vintage walnut table with water rings. Help me restore it..",
             "thread_id": "550e8400-e29b-41d4-a716-446655440000",
         }],
     })
+
 
     message: str = Field(
         ...,
