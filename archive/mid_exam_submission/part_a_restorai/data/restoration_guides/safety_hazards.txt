@@ -1,0 +1,260 @@
+FURNITURE RESTORATION GUIDE - SAFETY INFORMATION & HAZARDOUS MATERIALS
+Source: Occupational Safety and Restoration Best Practices
+Last Updated: February 2026
+Category: Safety
+Priority: CRITICAL
+
+=== GENERAL SAFETY RULES ===
+
+ALWAYS:
+✓ Work in well-ventilated areas
+✓ Wear appropriate personal protective equipment (PPE)
+✓ Keep fire extinguisher nearby when using flammable materials
+✓ Read and follow all product safety data sheets (SDS)
+✓ Keep materials away from heat sources and open flames
+✓ Store chemicals in original containers with labels
+✓ Dispose of materials according to local regulations
+
+NEVER:
+✗ Mix chemicals unless specifically instructed
+✗ Eat, drink, or smoke while working with chemicals
+✗ Work near open flames with flammable solvents
+✗ Pour chemicals down drain without checking regulations
+✗ Use damaged power tools or frayed electrical cords
+
+=== PROTECTIVE EQUIPMENT ===
+
+MINIMUM PPE Requirements:
+- Safety glasses or goggles (chemical-rated for strippers)
+- Nitrile or chemical-resistant gloves
+- Dust mask or respirator (N95 minimum for sanding)
+- Work apron or old clothing
+- Closed-toe shoes
+
+ENHANCED PPE (for chemical stripping, spray finishing):
+- Full-face respirator with organic vapor cartridges
+- Chemical-resistant gloves (neoprene or nitrile)
+- Long sleeves and pants
+- Ventilation fan or outdoor work area
+
+=== CHEMICAL HAZARDS ===
+
+CHEMICAL STRIPPERS (Methylene Chloride, NMP-based):
+Material: Paint and finish removal
+Hazard Level: HIGH
+Risks: Skin burns, respiratory irritation, neurotoxicity
+
+Safety Measures:
+- Use ONLY in outdoor or well-ventilated areas
+- Wear chemical-resistant gloves (neoprene)
+- Wear goggles or face shield
+- Avoid skin contact completely
+- If contact occurs: rinse with water for 15+ minutes
+- Keep away from heat and flames
+
+Safer Alternative: Citrus-based strippers (slower but less toxic)
+
+MINERAL SPIRITS / PAINT THINNER:
+Material: Cleaning, thinning oil-based finishes
+Hazard Level: MEDIUM
+Risks: Flammable, respiratory irritation, skin irritation
+
+Safety Measures:
+- Use in ventilated area
+- Keep away from sparks and flames
+- Wear gloves
+- Store in metal safety can with tight lid
+- Dispose of rags properly (spontaneous combustion risk)
+
+DENATURED ALCOHOL:
+Material: Shellac solvent, cleaning
+Hazard Level: MEDIUM
+Risks: Highly flammable, toxic if ingested, eye irritant
+
+Safety Measures:
+- Keep away from heat sources and flames
+- Work in ventilated area
+- Wear gloves and safety glasses
+- Do not ingest
+- Store in original container away from heat
+
+LACQUER THINNER:
+Material: Lacquer application and cleanup
+Hazard Level: HIGH
+Risks: Extremely flammable, neurotoxic, respiratory irritant
+
+Safety Measures:
+- Use only in well-ventilated area or outdoors
+- Wear organic vapor respirator
+- Keep away from all ignition sources
+- Chemical-resistant gloves required
+- Avoid prolonged exposure
+
+WOOD STAINS (Oil-based):
+Material: Coloring wood
+Hazard Level: MEDIUM
+Risks: Flammable, fumes can cause dizziness
+
+Safety Measures:
+- Use in ventilated area
+- Wear gloves
+- Avoid prolonged skin contact
+- Store away from heat
+
+POLYURETHANE (Oil-based):
+Material: Top coat finish
+Hazard Level: MEDIUM
+Risks: Flammable, strong fumes, respiratory irritation
+
+Safety Measures:
+- Apply in well-ventilated area
+- Wear respirator for large projects
+- Keep away from heat sources
+- Allow proper drying/curing time
+
+=== SPONTANEOUS COMBUSTION RISK ===
+
+WARNING: Oil-soaked rags are a FIRE HAZARD
+
+Materials at Risk:
+- Linseed oil
+- Tung oil
+- Oil-based stains and finishes
+- Danish oil
+- Any drying oils
+
+Why Dangerous:
+Drying oils generate heat through oxidation. Bunched rags can trap heat, reaching ignition temperature (causing fire WITHOUT external flame).
+
+PROPER DISPOSAL:
+Method 1 (Safest):
+1. Spread rags flat outdoors on non-combustible surface
+2. Allow to dry completely (24-48 hours)
+3. Dispose in regular trash once fully dry and stiff
+
+Method 2:
+1. Place wet rags in metal container with tight lid
+2. Fill completely with water
+3. Keep outdoors away from buildings
+4. Take to hazardous waste facility
+
+NEVER:
+✗ Pile oil-soaked rags together
+✗ Put in regular trash while still wet
+✗ Store in closed containers without water
+✗ Leave in garage or workshop overnight
+
+=== DUST HAZARDS ===
+
+Wood Dust Health Risks:
+- Respiratory irritation
+- Allergic reactions
+- Increased cancer risk with prolonged exposure (especially hardwoods)
+- Eye irritation
+
+Protection:
+- Wear N95 or better dust mask
+- Use dust collection system when power sanding
+- Sand outdoors when possible
+- Wear safety glasses
+- Damp-mop work area after sanding
+
+Exotic Woods (Higher Risk):
+- Walnut: Can cause severe allergic reactions
+- Cocobolo, Rosewood: Respiratory sensitizers
+- Cedar: Asthma trigger for some individuals
+
+=== TOOL SAFETY ===
+
+Power Sanders:
+- Secure work piece before sanding
+- Keep cord away from sanding surface
+- Let tool come to full stop before setting down
+- Use dust collection
+
+Heat Guns:
+- Never leave unattended while on
+- Point away from yourself and flammable materials
+- Can ignite materials if held too close
+- Allow to cool before storing
+
+Spray Equipment:
+- Follow manufacturer guidelines
+- Wear respirator rated for spray finishing
+- Work in spray booth or outdoors
+- Ground all equipment to prevent static sparks
+
+=== FIRST AID ===
+
+Chemical Splash to Eyes:
+1. Rinse with water for 15-20 minutes
+2. Hold eyelids open while rinsing
+3. Seek medical attention immediately
+
+Chemical on Skin:
+1. Remove contaminated clothing
+2. Rinse affected area with water for 15+ minutes
+3. Wash with soap and water
+4. Seek medical attention if irritation persists
+
+Inhalation of Fumes:
+1. Move to fresh air immediately
+2. Sit or lie down
+3. Loosen tight clothing
+4. Seek medical attention if symptoms persist
+
+Ingestion:
+1. Do NOT induce vomiting
+2. Call poison control immediately: 1-800-222-1222
+3. Have product container/label available
+
+=== ENVIRONMENTAL DISPOSAL ===
+
+Never Pour Down Drain:
+- Paint strippers
+- Mineral spirits
+- Lacquer thinner
+- Oil-based stains or finishes
+
+Proper Disposal:
+- Take to household hazardous waste facility
+- Check local municipality for collection days
+- Some paint stores accept leftover finishes
+
+Safe to Dispose (after fully dry):
+- Water-based products
+- Completely dried rags
+- Sawdust (except from pressure-treated or toxic woods)
+
+=== WORKSPACE SAFETY ===
+
+Fire Prevention:
+- Keep flammable materials away from heat sources
+- No smoking in work area
+- Have fire extinguisher rated for chemical fires (Class B)
+- Know evacuation route
+
+Electrical Safety:
+- Use GFCI outlets in damp areas
+- Inspect cords for damage before use
+- Don't overload circuits
+- Unplug tools when changing accessories
+
+Ventilation:
+- Open windows and doors
+- Use exhaust fans (explosion-proof for spray finishing)
+- Work outdoors when possible for chemical use
+- Use respirator when ventilation is insufficient
+
+=== RESTRICTED/BANNED MATERIALS ===
+
+DO NOT USE (Health Hazards):
+✗ Lead-based paints (banned, but may exist on old furniture)
+✗ Asbestos-containing materials
+✗ Chromated copper arsenate (CCA) treated wood for indoor projects
+✗ Formaldehyde-releasing adhesives without proper ventilation
+
+If Suspected:
+- Do not sand or disturb
+- Consult professional for testing
+- May require professional abatement

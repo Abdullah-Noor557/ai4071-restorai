@@ -1,0 +1,38 @@
+# =============================================================================
+# RestorAI - consolidated, version-pinned dependencies (Python 3.11)
+#
+# Used by:
+#   * local development            (pip install -r requirements.txt)
+#   * the production container     (Dockerfile, builder stage)
+#   * the CI quality-gate pipeline (.github/workflows/main.yml)
+#
+# Versions are pinned so every build of the image yields the same wheels.
+# =============================================================================
+
+# ---- LangGraph / LangChain -------------------------------------------------
+langgraph==0.2.45
+langgraph-checkpoint-sqlite==2.0.10
+langchain-core==0.3.21
+langchain-openai==0.2.8
+
+# ---- LLM / embeddings ------------------------------------------------------
+openai==1.58.1
+google-generativeai==0.8.3
+Pillow==11.0.0
+
+# ---- Vector DB (used by the agent + by ingest_data.py) ---------------------
+chromadb==0.5.23
+
+# ---- API layer (Lab 4) -----------------------------------------------------
+fastapi==0.131.0
+uvicorn[standard]==0.41.0
+httpx==0.28.1
+pydantic==2.10.4
+
+# ---- Async SQLite checkpointer (langgraph-checkpoint-sqlite 2.x needs >=0.20) --
+# Keep <0.22: 0.22+ removed Connection.is_alive used by older checkpoint code paths.
+aiosqlite==0.21.0
+
+# ---- Misc utilities --------------------------------------------------------
+python-dotenv==1.0.1
+tqdm==4.67.1

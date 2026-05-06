@@ -1,0 +1,203 @@
+FURNITURE RESTORATION GUIDE - FINISHING TECHNIQUES
+Source: Master Craftsman Workshop Manual
+Last Updated: January 2026
+Category: Finishing
+Priority: Medium
+
+=== STRIPPING & PREPARATION ===
+
+When to Strip vs. Restore Existing Finish:
+STRIP if:
+- Finish is heavily damaged (alligatoring, deep cracks)
+- Multiple incompatible finish layers present
+- Changing color or type of finish
+- Paint removal needed
+
+RESTORE if:
+- Original finish is intact but dull
+- Minor scratches or wear only
+- Historical value in preserving original finish
+- Shellac or wax finish (can be revived)
+
+Chemical Stripping Method:
+Material: All wood types
+Safety: CRITICAL - Use outdoors or well-ventilated area, wear gloves and eye protection
+
+1. Apply chemical stripper with natural bristle brush
+2. Wait recommended time (15-30 minutes)
+3. Remove softened finish with plastic scraper
+4. Work with grain direction
+5. Use steel wool (0000) for detailed areas
+6. Neutralize with mineral spirits or water (check product instructions)
+7. Allow 24-48 hours drying time before refinishing
+
+Heat Gun Method:
+Material: Painted wood (NOT veneer)
+Caution: Risk of scorching wood or fire
+
+1. Hold heat gun 6-8 inches from surface
+2. Move constantly to avoid burning
+3. Scrape softened finish immediately
+4. Never use on veneer (will lift glue)
+
+Sanding:
+- Start with 80-grit for rough surfaces
+- Progress through 120, 150, 220 grit
+- Always sand with the grain
+- Vacuum between grit changes
+- Final pass with 320 for glass-smooth surface
+
+=== STAINING ===
+
+Material: Bare wood
+Application: Post-stripping, pre-finishing
+
+Types of Stain:
+
+Oil-Based Stain:
+- Longer working time
+- Deeper penetration
+- Best for: Oak, ash, open-grain woods
+- Dry time: 6-8 hours
+
+Water-Based Stain:
+- Quick drying
+- Raises grain (requires extra sanding)
+- Best for: Even color, low odor projects
+- Dry time: 2-3 hours
+
+Gel Stain:
+- Thick consistency, less dripping
+- Best for: Vertical surfaces, blotch-prone woods (pine, maple)
+- Even color distribution
+- Dry time: 8-12 hours
+
+Application Technique:
+1. Test on scrap or hidden area first
+2. Apply with brush or cloth in direction of grain
+3. Allow penetration (5-15 minutes depending on desired darkness)
+4. Wipe excess with clean cloth
+5. Let dry completely before topcoat
+6. Apply second coat for darker color if needed
+
+Blotch Prevention (Pine, Maple, Cherry):
+1. Apply wood conditioner before stain
+2. Wait 15 minutes
+3. Lightly sand with 320-grit
+4. Apply stain while conditioner still slightly damp
+
+=== TOP COAT FINISHES ===
+
+SHELLAC (Traditional French Polish):
+Material: All woods, especially for antique restoration
+Difficulty: High skill required
+
+Process:
+1. Mix shellac flakes with denatured alcohol (2 lb cut for filling, 1 lb for top coats)
+2. Apply thin coats with brush or padding technique
+3. Sand lightly with 400-grit between coats
+4. Build 3-5 coats for protection
+5. Final coat: 1/2 lb cut, padded for glass finish
+6. Dry time: 2-3 hours between coats
+
+Advantages: Repairable, beautiful warm tone, traditional
+Disadvantages: Not water-resistant, alcohol sensitive
+
+OIL-BASED POLYURETHANE:
+Material: High-traffic surfaces, tabletops
+Difficulty: Easy
+Sheen: Gloss, semi-gloss, satin
+
+Process:
+1. Thin first coat 10% with mineral spirits (better penetration)
+2. Apply with high-quality natural bristle brush
+3. Flow on, don't over-brush
+4. Dry 24 hours
+5. Sand with 320-grit
+6. Apply 2-3 additional coats
+7. Wait 72 hours for full cure
+
+Advantages: Very durable, water-resistant
+Disadvantages: Yellows over time, difficult to repair
+
+WATER-BASED POLYURETHANE:
+Material: Light woods, modern projects
+Difficulty: Easy
+Sheen: Clear, non-yellowing
+
+Process:
+1. Do not thin
+2. Apply with synthetic bristle brush
+3. Use long, even strokes
+4. Dry time: 2-3 hours
+5. Light sand with 320-grit between coats
+6. Apply 3 coats minimum
+7. Cure time: 48 hours
+
+Advantages: Clear, no yellowing, low odor, quick dry
+Disadvantages: Less durable than oil-based, raises grain slightly
+
+LACQUER (Spray Application):
+Material: Professional projects, production furniture
+Difficulty: High (requires spray equipment)
+
+Process:
+1. Seal with sanding sealer
+2. Sand with 320-grit
+3. Apply 3-4 thin coats (better than 1 heavy coat)
+4. Dry time: 30 minutes between coats
+5. Wet sand with 600-grit after final coat (optional)
+6. Rub out with rubbing compound for glass finish
+
+Advantages: Fast drying, beautiful finish, repairable
+Disadvantages: Requires spray equipment, strong fumes, ventilation needed
+
+TUNG OIL (Hand-Rubbed Finish):
+Material: Walnut, teak, open-grain woods
+Difficulty: Easy, time-consuming
+
+Process:
+1. Apply generous coat with cloth
+2. Let penetrate 10-15 minutes
+3. Wipe all excess completely
+4. Dry 24 hours minimum
+5. Repeat 4-6 times
+6. Final coats: very thin application
+7. Buff with soft cloth
+
+Advantages: Natural look, easy repair, highlights grain
+Disadvantages: Multiple coats needed, minimal protection, long cure time
+
+=== RUBBING OUT & POLISHING ===
+
+For Professional Glass Finish:
+Material: Fully cured finish (polyurethane, lacquer)
+Difficulty: Medium
+
+Process:
+1. Wet sand with 600-grit paper (use water or oil as lubricant)
+2. Progress to 800, 1000, 1200 grit
+3. Apply rubbing compound with soft cloth in circular motion
+4. Follow with polishing compound
+5. Final buff with clean microfiber cloth
+6. Apply paste wax (optional)
+
+Result: Mirror-like, glass-smooth finish
+
+=== WAX APPLICATION (Final Protection) ===
+
+Material: Over sealed finish (not bare wood)
+Purpose: Protection, enhanced luster, maintenance
+
+Types:
+- Paste Wax: Traditional, best protection
+- Liquid Wax: Easier application, less durable
+
+Application:
+1. Ensure finish is fully cured
+2. Apply thin layer with soft cloth
+3. Let haze (5-10 minutes)
+4. Buff with clean cloth in circular motion
+5. Reapply every 3-6 months
+
+Best Practice: Apply 2-3 thin coats rather than 1 heavy coat

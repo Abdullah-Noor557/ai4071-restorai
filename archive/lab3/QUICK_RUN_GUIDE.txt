@@ -1,0 +1,99 @@
+╔════════════════════════════════════════════════════════════════════╗
+║         RestorAI Lab 3 - QUICK RUN GUIDE (2 Minutes)              ║
+╚════════════════════════════════════════════════════════════════════╝
+
+To run the Lab 3 demo RIGHT NOW:
+
+METHOD 1: PowerShell Script (Easiest)
+════════════════════════════════════════════════════════════════════
+
+1. Open PowerShell in: D:\AI Lab Final\lab3
+
+2. Run:
+   .\set_keys_and_run.ps1
+
+3. When prompted, paste your OpenAI API key
+
+4. Watch the agent work!
+
+METHOD 2: Manual (If script doesn't work)
+════════════════════════════════════════════════════════════════════
+
+1. Open PowerShell in: D:\AI Lab Final\lab3
+
+2. Set your API key IN THIS SESSION:
+   $env:OPENAI_API_KEY="sk-proj-YOUR_ACTUAL_KEY_HERE"
+   
+   IMPORTANT: Replace YOUR_ACTUAL_KEY_HERE with your real key!
+
+3. Run the demo:
+   python run_demo.py
+
+4. Expected output:
+   [STEP 1] Agent calling tools: search_restoration_knowledge
+   [STEP 2] Agent calling tools: search_restoration_knowledge (safety)
+   [STEP 3] Agent calling tools: search_web_for_products
+   [STEP 4] Agent generated final plan
+   [FINAL OUTPUT] Complete restoration guide
+
+═══════════════════════════════════════════════════════════════════
+IF YOU GET ERRORS
+═══════════════════════════════════════════════════════════════════
+
+Error: "OPENAI_API_KEY not set"
+→ You forgot Step 2! Set the key with:
+  $env:OPENAI_API_KEY="your_key_here"
+
+Error: "ModuleNotFoundError: No module named 'langgraph'"
+→ Install dependencies:
+  pip install -r requirements_lab3.txt
+
+Error: "Collection restoration_knowledge does not exist"
+→ Run Lab 2 ingestion first:
+  cd ..
+  python ingest_data.py
+  cd lab3
+
+═══════════════════════════════════════════════════════════════════
+VERIFYING IT WORKS
+═══════════════════════════════════════════════════════════════════
+
+When you run the demo, you should see:
+
+1. Agent queries knowledge base
+   [STEP 1] Agent calling tools:
+     - search_restoration_knowledge
+
+2. Agent receives restoration techniques
+   [OK] search_restoration_knowledge completed
+
+3. Agent checks safety
+   [STEP 2] Agent calling tools:
+     - search_restoration_knowledge (safety_only=True)
+
+4. Agent searches for products
+   [STEP 3] Agent calling tools:
+     - search_web_for_products
+
+5. Agent generates final plan
+   [FINAL OUTPUT] Shows complete restoration guide
+
+═══════════════════════════════════════════════════════════════════
+WHAT TO SUBMIT
+═══════════════════════════════════════════════════════════════════
+
+Submit the entire lab3 folder:
+- tools.py (Tool definitions)
+- graph.py (LangGraph state machine)
+- main.py (Execution script)
+- run_demo.py (Simplified runner)
+- requirements_lab3.txt (Dependencies)
+- All documentation files
+
+═══════════════════════════════════════════════════════════════════
+
+Student: Abdullah Noor (2022029)
+Project: RestorAI
+Lab 3: Complete
+
+Questions? See SETUP_AND_RUN.txt for detailed guide.

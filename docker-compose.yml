@@ -1,0 +1,106 @@
+# =============================================================================
+# docker-compose.yml - RestorAI multi-service stack
+#
+#   chromadb : official chromadb/chroma image (vector store, persistent)
+#   agent    : our FastAPI + LangGraph image (built from ./Dockerfile)
+#
+# Service discovery
+#   The agent container reaches the vector DB at  http://chromadb:8000
+#   (compose attaches both services to the same default bridge network).
+#
+# Persistence
+#   Two named volumes survive container restarts:
+#       chroma_data         -> /chroma/chroma   inside the chromadb container
+#       restorai_checkpoints -> /app/persist    (checkpoints + orders; /app/data stays from image)
+#
+# Secrets
+#   Keys are NEVER baked into the image. They are loaded from a local
+#   ``.env`` file at start-up time (see .env.example) so they only live in
+#   the running container's process environment.
+#
+# Usage
+#   $ cp .env.example .env             # add your real keys
+#   $ docker compose up --build        # build + start
+#   $ curl http://localhost:8000/health
+#   $ docker compose down              # stop (volumes survive)
+#   $ docker compose down -v           # full reset (drops volumes)
+# =============================================================================
+
+services:
+
+  # ---------------------------------------------------------------------------
+  # ChromaDB - vector store / RAG backend
+  # ---------------------------------------------------------------------------
+  chromadb:
+    image: chromadb/chroma:0.5.23
+    container_name: restorai-chromadb
+    environment:
+      IS_PERSISTENT: "TRUE"
+      ANONYMIZED_TELEMETRY: "FALSE"
+    volumes:
+      - chroma_data:/chroma/chroma
+    expose:
+      - "8000"
+    ports:
+      - "8001:8000"   # exposed on the host for ad-hoc inspection
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/api/v1/heartbeat"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 15s
+    networks:
+      - restorai_net
+
+  # ---------------------------------------------------------------------------
+  # Agent API - FastAPI + LangGraph + checkpointer
+  # ---------------------------------------------------------------------------
+  agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: restorai-agent:latest
+    container_name: restorai-agent
+    depends_on:
+      chromadb:
+        condition: service_healthy
+    environment:
+      # --- secrets injected at runtime, NEVER baked into the image ----------
+      OPENAI_API_KEY: ${OPENAI_API_KEY:?OPENAI_API_KEY must be set}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
+
+      # --- service discovery ------------------------------------------------
+      CHROMA_HOST: chromadb
+      CHROMA_PORT: "8000"
+
+      # --- persistent state (mounted volume) --------------------------------
+      CHECKPOINT_DB_PATH: /app/persist/checkpoints.sqlite
+      ORDERS_DIR: /app/persist/orders
+    volumes:
+      - restorai_checkpoints:/app/persist
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    networks:
+      - restorai_net
+
+# ---------------------------------------------------------------------------
+# Volumes - declared explicitly so they get human-friendly names
+# ---------------------------------------------------------------------------
+volumes:
+  chroma_data:
+    name: restorai_chroma_data
+  restorai_checkpoints:
+    name: restorai_checkpoints
+
+networks:
+  restorai_net:
+    name: restorai_net
+    driver: bridge

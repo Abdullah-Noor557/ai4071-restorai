@@ -1,0 +1,162 @@
+ 
+ 
+Faculty of Computer Science and Engineering 
+AI407L Lab Mid Exam - Spring 2026 
+ 
+ 
+Course Code: AI407L                                                               Program: BSAI 
+ 
+Course Title:                                                     AI Capstone Project Lab 
+Date: _________________ 
+Course Instructor Signature:                              ______________________ 
+ 
+Vetted Faculty Signature:                                   ______________________ 
+ 
+HOD Signature:                                                     ______________________ 
+ 
+ 
+ 
+ 
+  
+Name: _________________________ 
+Reg. No: _______________________ 
+Ghulam Ishaq Khan Institute of 
+Engineering Sciences & Technology 
+Instructor: Mr. Muhammad Naeem, M. Asadullah Amin                                     Total Marks = 150 
+AI407L Spring 2026 Mid-Exam 
+Page 2 of 5 
+ 
+Instructions: 
+1. Follow the Lab Manuals Strictly 
+All implementations must strictly comply with the specifications provided in Lab 2, Lab 3, Lab 4, 
+Lab 5 for Part A. 
+2. Functional Implementation is Mandatory 
+Your system must be executable and demonstrably functional. Hardcoded outputs, mocked 
+responses, or simulated behavior without actual pipeline execution will not be accepted. 
+3. Modular and Clean Code Structure 
+4. Proper Naming Conventions 
+Use meaningful variable names, function names, and file names that reflect system purpose. 
+Poor naming reduces clarity and may affect grading. 
+5. Independent Work 
+This is an individual assessment. Collaboration or code sharing is strictly prohibited. 
+6. Professional Documentation 
+A proper technical report must accompany your submission. Poor documentation, even with 
+working code, will affect marks. 
+7. Submission Discipline 
+• Late submissions will not be entertained. 
+• Missing files or incomplete components will receive zero for that section. 
+8. Clarity Over Complexity 
+Overly complex but unstable systems will not score higher than clean, well-structured, fully 
+functional implementations. 
+  
+AI407L Spring 2026 Mid-Exam 
+Page 3 of 5 
+ 
+Part A: 
+You are required to continue the same domain/project you have been developing in previous labs. 
+You must implement all technical requirements exactly as defined in the official Lab Manual. 
+Failure to follow lab specifications will result in deduction of marks.          (40 Marks) 
+Task 1:                                                  [CLO-1/ GA-4/P4]               (Marks: 10)                                
+Design and implement a complete Retrieval -Augmented Generation (RAG) pipeline for your 
+project domain.  
+All requirements must strictly follow the specifications defined in Lab 2: Knowledge Engineering & 
+Domain Grounding. 
+Task 2:                                                     [CLO-1/GA-4/P4]              (Marks: 10)      
+Design and implement the complete reasoning workflow of your agent using LangGraph. 
+Your system must: 
+• Define an appropriate graph state structure. 
+• Implement an agent node responsible for reasoning. 
+• Implement a tool execution node. 
+• Develop project-specific tools using proper decorators and input validation. 
+• Implement conditional routing logic to control execution flow. 
+Your workflow must demonstrate a functioning ReAct loop (Reason + Act). 
+All implementations must comply fully with Lab 3: The Reasoning Loop requirements 
+Task 3:                                                    [CLO-2/GA-4/P4]              (Marks: 10)      
+Extend your system into multi-agent architecture using LangGraph. 
+You must implement the following: 
+• Define at least two specialized agent personas. 
+• Restrict tool access according to agent roles. 
+• Implement proper state handover between agents. 
+• Design routing logic to manage inter-agent communication. 
+• Demonstrate collaborative task execution requiring cooperation between agents. 
+Your output must clearly reflect distinct agent responsibilities and transitions. 
+All work must comply with Lab 4: Multi-Agent Orchestration requirements. 
+  
+AI407L Spring 2026 Mid-Exam 
+Page 4 of 5 
+ 
+Task 4:                                                    [CLO-2/GA-4/P4]              (Marks: 10) 
+Implement Persistent Memory and Human-in-the-Loop (HITL). 
+You must: 
+• Integrate persistent state management using a check pointer. 
+• Enable session recovery using thread identifiers. 
+• Identify a high-risk action tool within your project. 
+• Implement a safety interruption mechanism before execution of that tool. 
+• Allow human approval or cancellation before proceeding. 
+• Demonstrate that a human can edit the agent’s proposed action before execution. 
+All work must strictly follow the technical specifications provided in 
+Lab 5: State Management & Human-in-the-Loop. 
+ 
+ 
+Part B: 
+You are required to implement a standalone Model Context Protocol (MCP) pipeline as a 
+separate task. 
+This task must NOT be integrated into your Part A project. 
+You must design and demonstrate MCP in an independent use-case of your choice. 
+You must strictly follow the MCP design principles. 
+Failure to properly demonstrate MCP structure, context separation, and tool exposure will result 
+in deduction of marks.                                        Marks:30 
+Task 1:                                                    [CLO-1/ GA-4/P4]            (Marks: 10) 
+Design and implement an MCP Server that exposes structured tools to a client model. 
+You must: 
+• Create a standalone MCP server. 
+• Define at least two callable tools inside the server. 
+• Clearly define structured input and output schemas. 
+• Ensure tools are exposed via proper MCP protocol specification. 
+• Demonstrate that the model accesses tools through MCP rather than direct function 
+calls. 
+The implementation must clearly separate: 
+• Model 
+• Context 
+• Tools 
+• Execution layer 
+  
+AI407L Spring 2026 Mid-Exam 
+Page 5 of 5 
+ 
+Task 2:                                                     [CLO-1/GA-4/P4]            (Marks: 10) 
+Design and implement the MCP client-side interaction pipeline. 
+You must: 
+• Establish connection between model and MCP server. 
+• Demonstrate context exchange using the MCP standard. 
+• Show tool discovery from the MCP server. 
+• Execute at least one tool via MCP protocol. 
+• Capture and display structured responses. 
+Your submission must clearly show: 
+• Tool registration 
+• Tool invocation 
+• Context passing 
+• Response handling 
+Task 3:                                                     (Marks: 10) 
+Write a structured technical comparison explaining: 
+• Why MCP is needed in production systems. 
+• Difference between: 
+✓ Direct Tool Invocation 
+✓ LangGraph-based orchestration 
+✓ MCP-based modular exposure 
+• How MCP improves: 
+✓ Security 
+✓ Scalability 
+✓ System abstraction 
+✓ Separation of concerns 
+This must be written as a formal technical justification. 
+ 
+ 
+Rubrics 
+Component Marks Weightage 
+Part A (Agent System) 40 8% 
+Part B (MCP Pipeline) 30 4% 
+Technical Report 20 2% 
+Viva / Oral /written 60 6% 
+Total 150 20% 
+ 

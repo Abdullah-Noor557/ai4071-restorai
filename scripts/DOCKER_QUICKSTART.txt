@@ -1,0 +1,35 @@
+RestorAI OEL – Docker quickstart (Windows)
+==========================================
+
+1) Install Docker Desktop and start it (wait until “Engine running”).
+
+2) From the project root “AI Lab Final”:
+   - A .env file was created from .env.example if it did not exist.
+   - Edit .env and set your real OPENAI_API_KEY (required for /chat and RAG).
+
+3) Start the stack:
+   PowerShell:
+     .\scripts\docker_up.ps1
+
+   Or manually:
+     docker compose up --build -d
+     docker compose ps
+     Invoke-WebRequest http://localhost:8000/health -UseBasicParsing
+
+4) Load the knowledge base into the compose ChromaDB (first time or empty DB):
+     docker compose exec agent python -m app.ingestion.ingest_data
+
+5) Test chat:
+     curl -X POST http://localhost:8000/chat -H "Content-Type: application/json" -d "{\"message\":\"How do I fix water rings on oak?\",\"thread_id\":\"demo-1\"}"
+
+6) Stop (keeps volumes → data persists):
+     docker compose down
+
+   Full reset (delete vector + checkpoint volumes):
+     docker compose down -v
+
+Ports:
+  - Agent API: http://localhost:8000
+  - Chroma heartbeat (host): http://localhost:8001/api/v1/heartbeat
+
+If you see “cannot find dockerDesktopLinuxEngine”: Docker Desktop is not running or the Linux engine is disabled—open Docker Desktop → Settings → ensure WSL2 / Linux containers are enabled.

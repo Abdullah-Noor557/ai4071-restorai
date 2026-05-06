@@ -1,0 +1,327 @@
+FURNITURE RESTORATION GUIDE - PRODUCTS & MATERIALS REFERENCE
+Source: Professional Restorer's Supply Guide
+Last Updated: January 2026
+Category: Products
+Priority: Medium
+
+=== ADHESIVES ===
+
+WOOD GLUE (PVA - Polyvinyl Acetate):
+Brand Examples: Titebond, Elmer's Wood Glue
+Material: Solid wood joints, general woodworking
+Strength: High
+Dry Time: Clamp 30-60 minutes, full cure 24 hours
+Application: Interior use only, not water-resistant (except Type II and III)
+Best for: Chair repairs, joint reconstruction, edge gluing
+
+HIDE GLUE (Traditional):
+Forms: Liquid (pre-mixed), Granules (mix with water), Hot (heated pot)
+Material: Antique furniture, veneer, traditional restoration
+Strength: Strong, reversible
+Dry Time: 2-4 hours clamp time
+Application: Heat granules to 145°F, apply warm
+Best for: Museum-quality restoration, period-correct repairs, easy reversibility
+Advantages: Reversible with heat/moisture, traditional, long open time
+
+EPOXY:
+Types: 5-minute, 30-minute, slow-set (2-hour)
+Material: Structural repairs, gap-filling, rotted wood stabilization
+Strength: Extremely high
+Dry Time: Varies by formula
+Application: Mix two parts, apply immediately
+Best for: Permanent repairs, outdoor furniture, load-bearing joints
+Warning: NOT reversible, difficult to sand
+
+CONTACT CEMENT:
+Brand Examples: DAP Weldwood, Barge
+Material: Veneer application, laminate
+Strength: Immediate bond
+Dry Time: Apply to both surfaces, wait until tacky (15-20 min), press together
+Application: No repositioning possible after contact
+Best for: Large veneer sheets, plastic laminate
+
+CYANOACRYLATE (CA Glue / Super Glue):
+Viscosity: Thin, medium, thick
+Material: Small chips, crack filling with accelerator
+Strength: Very high for small bonds
+Dry Time: Seconds with accelerator
+Application: Apply to one surface, mist accelerator on other
+Best for: Instant repairs, stabilizing small cracks, small parts
+
+=== WOOD FILLERS ===
+
+WOOD PUTTY (Solvent-based):
+Brand Examples: Minwax Wood Putty
+Material: Finished wood only
+Use: Filling nail holes, small gaps
+Shrinkage: Minimal
+Sandable: Yes
+Stainable: No (use only on finished surfaces)
+Colors: Multiple wood tones available
+Dry Time: 15-30 minutes
+
+WOOD FILLER (Water-based):
+Brand Examples: Elmer's Wood Filler, DAP Plastic Wood
+Material: Bare or finished wood
+Use: Larger holes, gouges, imperfections
+Shrinkage: Some shrinkage (may need second application)
+Sandable: Yes
+Stainable: Poorly (limited uptake)
+Dry Time: 30 minutes to 2 hours
+Application: Apply with putty knife, overfill slightly
+
+COLORED WOOD FILLER:
+Brand Examples: Famowood, Plastic Wood
+Colors: Pre-mixed to match wood species
+Use: Repairs where close color match needed
+Stainable: No
+Best for: Nail holes, gouges in finished pieces
+
+TWO-PART EPOXY FILLER:
+Brand Examples: Abatron WoodEpox, System Three
+Material: Structural repairs, rotted wood replacement
+Use: Large voids, outdoor furniture, structural damage
+Sandable: Yes (but difficult, very hard)
+Stainable: No
+Strength: Extremely high
+Application: Mix two parts, sculpt into place
+Dry Time: 30 minutes to 6 hours depending on formula
+
+SHELLAC STICK (Burn-in Stick):
+Colors: Wide range matching wood tones
+Material: Finished furniture only
+Use: Deep scratches, small gouges in finish
+Application: Melt with alcohol lamp or burn-in knife, flow into damage
+Sandable: Yes, when cool
+Best for: Professional-looking repairs without refinishing
+
+=== STRIPPERS & CLEANERS ===
+
+CHEMICAL STRIPPER - Methylene Chloride Based:
+Brand Examples: Klean-Strip, Jasco
+Material: All finishes
+Strength: Very aggressive, fast
+Hazard: High - neurotoxic, requires excellent ventilation
+Application: Brush on, wait 15-30 minutes, scrape
+Best for: Multiple finish layers, difficult stripping jobs
+Disposal: Hazardous waste facility
+
+SAFER STRIPPER - Biochemical/Citrus Based:
+Brand Examples: Citristrip, Soy-Gel
+Material: Most finishes (slower on polyurethane)
+Strength: Moderate, requires longer dwell time
+Hazard: Low - better for indoor use
+Application: Apply thick coat, wait 30 minutes to 24 hours
+Best for: Indoor projects, health-conscious users
+
+MINERAL SPIRITS (Paint Thinner):
+Grade: Regular, Odorless
+Use: Cleaning brushes, thinning oil-based finishes, degreasing
+Hazard: Flammable, moderate fumes
+Application: Wipe or brush on
+Best for: Final cleaning before finishing, removing wax
+
+DENATURED ALCOHOL:
+Use: Shellac thinner, cleaning, removing alcohol-based finishes
+Hazard: Flammable, toxic if ingested
+Application: Wipe or brush
+Best for: Shellac work, cleaning old shellac finishes
+
+LACQUER THINNER:
+Use: Thinning lacquer, cleaning spray guns, removing lacquer
+Hazard: High - very flammable, strong fumes
+Application: Spray equipment cleaning, finish removal
+Best for: Lacquer finishing projects only
+
+TSP (Trisodium Phosphate):
+Use: Heavy cleaning, paint prep, removing grime
+Form: Powder, mix with water
+Application: Scrub with solution, rinse thoroughly
+Best for: Cleaning old furniture before refinishing
+Warning: Wear gloves, caustic to skin
+
+OXALIC ACID (Wood Bleach):
+Use: Removing water stains, ink stains, rust stains from wood
+Form: Powder or crystals, mix with water
+Application: Apply solution, let dry, neutralize with baking soda solution
+Best for: Dark water stains that penetrate wood
+Warning: Wear gloves and eye protection
+
+=== ABRASIVES ===
+
+SANDPAPER:
+Grits: 60 (coarse) to 320 (very fine)
+Backing: Paper (hand sanding), cloth (power sanding), foam (contours)
+Types: Aluminum oxide (general), garnet (hand sanding), silicon carbide (wet sanding)
+Progression: 80 → 120 → 150 → 220 (typical furniture refinishing)
+
+STEEL WOOL:
+Grades: #4 (coarse) to #0000 (super fine)
+Use: Stripping residue removal, applying wax, dulling gloss
+Common Grades:
+  #0000 - Applying wax, final finish smoothing
+  #00 - Light cleaning between finish coats
+  #0 - Removing old finish residue
+  #1 - Moderate cleaning, rust removal
+Warning: Don't use on wet water-based finishes (rust stains)
+
+SYNTHETIC STEEL WOOL:
+Brand: Scotch-Brite pads
+Use: Alternative to steel wool, won't rust
+Best for: Water-based finishes, won't leave rust specs
+
+SANDING SPONGES:
+Grits: Medium, Fine, Super Fine
+Use: Contoured surfaces, shaped edges
+Advantage: Washable, reusable, conforms to shape
+
+=== FINISHING PRODUCTS ===
+
+SHELLAC:
+Forms: Pre-mixed liquid, flakes (mix your own)
+Cuts: 1 lb, 2 lb, 3 lb (pounds of shellac per gallon of alcohol)
+Colors: Clear, amber, garnet, blonde
+Dry Time: 2-3 hours
+Recoat: 2-3 hours
+Application: Brush or pad
+Advantages: Traditional, repairable, seals odors
+
+POLYURETHANE - Oil-Based:
+Brands: Minwax, Varathane
+Sheen: Gloss, semi-gloss, satin, matte
+Dry Time: 24 hours between coats
+Cure Time: 72 hours minimum
+Application: Brush, high-quality natural bristle
+Advantages: Very durable, water-resistant
+
+POLYURETHANE - Water-Based:
+Brands: Minwax Polycrylic, General Finishes
+Sheen: Gloss, semi-gloss, satin, matte
+Dry Time: 2-3 hours between coats
+Cure Time: 48 hours
+Application: Brush, synthetic bristle or foam
+Advantages: Low odor, clear (no yellowing), fast dry
+
+TUNG OIL:
+Forms: Pure, polymerized (faster drying)
+Dry Time: 24 hours between coats
+Total Coats: 4-6
+Application: Wipe on, wipe off excess
+Advantages: Natural, enhances grain, hand-rubbed look
+
+DANISH OIL:
+Composition: Mix of oil and varnish
+Brands: Watco, Tried & True
+Dry Time: 8-12 hours
+Application: Flood surface, keep wet 15-30 minutes, wipe excess
+Advantages: Easy application, penetrating finish
+
+LACQUER:
+Forms: Spray only (for hobbyist)
+Dry Time: 30 minutes between coats
+Coats: 3-4 thin coats
+Application: HVLP spray gun
+Advantages: Beautiful finish, fast drying, repairable
+Warning: Requires spray setup, strong fumes
+
+PASTE WAX:
+Brands: Johnson's, Briwax, Howard
+Use: Final protective layer over sealed finish
+Application: Apply thin coat, let haze, buff
+Reapplication: Every 3-6 months
+Advantages: Enhances sheen, protective, traditional
+
+=== STAINS ===
+
+OIL-BASED STAIN:
+Brands: Minwax Wood Finish, Varathane
+Colors: Hundreds of options
+Dry Time: 6-8 hours before topcoat
+Application: Brush or cloth, wipe excess
+Advantages: Long working time, deep penetration
+
+GEL STAIN:
+Brands: General Finishes, Java Gel Stain
+Colors: Limited but rich selection
+Application: Wipe on with cloth
+Best for: Vertical surfaces, pine, maple (blotch-prone woods)
+Advantages: No drips, even color
+
+WATER-BASED STAIN:
+Brands: General Finishes, Minwax Water-Based
+Dry Time: 2-3 hours
+Application: Brush or cloth
+Advantages: Low odor, fast dry, soap and water cleanup
+Warning: Raises grain, requires extra sanding
+
+DYE STAINS:
+Forms: Powder (mix with water or alcohol)
+Use: Even coloring, color correction
+Application: Spray or wipe
+Advantages: No grain obscuring, even color on blotchy woods
+Requires: Top coat for protection
+
+=== SPECIALTY PRODUCTS ===
+
+WOOD CONDITIONER:
+Brands: Minwax Pre-Stain, Charles Neil
+Use: Apply before staining pine, maple, cherry
+Purpose: Prevents blotching, ensures even stain absorption
+Application: Apply, wait 15 minutes, lightly sand, stain while slightly damp
+
+GRAIN FILLER:
+Use: Filling open pores of oak, ash, mahogany
+Purpose: Glass-smooth finish on open-grain woods
+Application: Apply across grain, scrape excess, sand when dry
+
+SANDING SEALER:
+Use: First coat before topcoat finish
+Purpose: Faster build, easier sanding than topcoat
+Application: Brush or spray, sand with 320-grit
+
+RUBBING COMPOUND:
+Use: Smoothing final finish
+Grit: 1000-2000 grit equivalent
+Application: Apply with cloth, rub in circular motion
+Result: Satin to gloss sheen
+
+POLISHING COMPOUND:
+Use: After rubbing compound for high gloss
+Grit: 3000+ grit equivalent
+Application: Buff with soft cloth
+Result: Mirror-like finish
+
+FURNITURE POLISH:
+Types: Spray, liquid, cream
+Use: Maintenance cleaning and shine
+Common: Pledge, Howard Feed-N-Wax, Old English
+Application: Spray and wipe, or apply with cloth
+
+=== TOOLS & SUPPLIES ===
+
+BRUSHES:
+Natural Bristle: Use with oil-based finishes
+Synthetic Bristle: Use with water-based finishes
+Sizes: 1", 2", 3" (most common for furniture)
+Quality: Higher quality = fewer brush marks
+
+FOAM BRUSHES:
+Use: Disposable, water or oil-based
+Best for: Small projects, touch-ups
+Limitation: Can leave bubbles in finish
+
+RAGS & APPLICATORS:
+Cotton T-shirt Material: Best for staining and oil application
+Tack Cloth: Pre-finish dust removal
+Paper Shop Towels: General cleanup
+
+SCRAPERS:
+Paint Scraper: Removing old finish
+Cabinet Scraper: Smoothing wood (alternative to sanding)
+Plastic Scraper: Removing stripper without damaging wood
+
+CLAMPS:
+Bar Clamps: Long joints, tabletops
+C-Clamps: General purpose
+Spring Clamps: Quick small jobs
+Band Clamps: Chairs, irregular shapes

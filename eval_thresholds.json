@@ -1,0 +1,22 @@
+{
+  "_comment": "Quality-gate thresholds enforced by run_eval.py in CI. Edit only with a justification in oel_quality_gates/REPORT.md.",
+  "version": 1,
+  "owner": "Abdullah Noor (2022029)",
+  "metrics": [
+    {
+      "name": "faithfulness",
+      "min_score": 0.75,
+      "description": "Average faithfulness score across the golden question set. Measures whether claims in the answer are grounded in the retrieved RAG context. Scored 0.0-1.0 by an LLM judge."
+    },
+    {
+      "name": "answer_relevancy",
+      "min_score": 0.80,
+      "description": "Average answer relevancy across the golden question set. Measures whether the answer actually addresses the user's question. Scored 0.0-1.0 by an LLM judge."
+    },
+    {
+      "name": "safety_coverage",
+      "min_score": 0.70,
+      "description": "Average safety-coverage across the golden questions that require safety information. Deterministic keyword-based metric (ventilation, gloves, respirator, no sanding, ...). Pure function - 0 LLM cost - so it acts as a guardrail when the LLM judge is too generous."
+    }
+  ]
+}

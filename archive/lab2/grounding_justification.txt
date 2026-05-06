@@ -1,0 +1,229 @@
+GROUNDING JUSTIFICATION: Why RestorAI Needs a Custom Knowledge Base
+
+Student: Abdullah Noor - 2022029
+Project: RestorAI (The Furniture Flip Planner)
+Lab 2: Knowledge Engineering & Domain Grounding
+
+================================================================================
+THE CORE PROBLEM
+================================================================================
+
+RestorAI is a multi-agent system that guides users through restoring damaged 
+vintage furniture. While the underlying LLM (GPT-4/Claude) has general knowledge 
+about furniture and restoration, it CANNOT reliably perform this task without a 
+specialized knowledge base for the following critical reasons:
+
+================================================================================
+1. SAFETY-CRITICAL INFORMATION
+================================================================================
+
+ISSUE: Furniture restoration involves hazardous chemicals, flammable materials, 
+and processes that can cause fires (spontaneous combustion of oil-soaked rags), 
+chemical burns, or respiratory damage.
+
+WHY LLM ALONE FAILS:
+- General LLMs may not consistently prioritize safety warnings
+- They may hallucinate outdated or incorrect safety procedures
+- Critical warnings might be buried in general advice
+- Cannot enforce "NO SANDING ON VENEER" type constraints reliably
+
+WHAT THE KNOWLEDGE BASE PROVIDES:
+- Curated, verified safety information with CRITICAL priority tags
+- Metadata filtering (safety_level: high_caution) ensures safety checks happen
+- Structured hazard information (chemical properties, PPE requirements, disposal)
+- Agent 2 (Master Craftsman) can query: "What NOT to do with veneer?" and get 
+  authoritative constraints before recommending techniques
+
+REAL EXAMPLE:
+  User uploads image of water-damaged veneer table.
+  Without KB: LLM might suggest "sand the surface" (DESTROYS veneer!)
+  With KB: System retrieves: "WARNING: Never use on veneer (will lift glue)"
+           Agent 2 filters out sanding methods for veneer furniture.
+
+================================================================================
+2. DOMAIN-SPECIFIC PROCEDURAL KNOWLEDGE
+================================================================================
+
+ISSUE: Furniture restoration is a craft with precise, sequential steps. The 
+order matters (e.g., "clean → sand → stain → seal → topcoat"), and each wood 
+type requires different approaches.
+
+WHY LLM ALONE FAILS:
+- LLMs trained on broad internet data may mix techniques from different domains
+- May provide vague instructions like "apply finish" without specifying whether 
+  to use shellac, polyurethane, lacquer, or oil (each has different processes)
+- Cannot consistently provide step-by-step granularity needed for novice users
+- Might conflate modern and traditional techniques inappropriately
+
+WHAT THE KNOWLEDGE BASE PROVIDES:
+- Structured, step-by-step procedures for specific repairs:
+    * Water ring removal: "1. Place cloth... 2. Set iron to lowest heat..."
+    * Veneer repair: "1. Clean under veneer... 2. Apply yellow wood glue..."
+- Material-specific workflows (oak vs. maple vs. pine)
+- Metadata tagging (process_type: removal, application, repair) for agent routing
+
+REAL EXAMPLE:
+  User: "How do I fix scratches on my walnut table?"
+  Without KB: Generic answer about "using wood filler" (may not match color)
+  With KB: Retrieves specific technique: "For walnut: use walnut meat rubbed 
+           along scratch, then apply paste wax" - historically appropriate and 
+           color-matched solution.
+
+================================================================================
+3. MATERIAL IDENTIFICATION SUPPORT
+================================================================================
+
+ISSUE: Agent 1 (Vision Agent) uses Google Gemini Vision API to analyze uploaded 
+images, but the API may return uncertain results like "possibly oak" or 
+"hardwood - unspecified."
+
+WHY LLM ALONE FAILS:
+- Vision models are trained on broad datasets, not specialized furniture taxonomy
+- May confuse oak with ash, or walnut with mahogany
+- Cannot provide diagnostic tests to disambiguate materials
+
+WHAT THE KNOWLEDGE BASE PROVIDES:
+- Detailed material characteristics (grain patterns, weight, color, era markers)
+- Diagnostic decision trees: "If straight grain + heavy + prominent rays → Oak"
+- Finish type identification (shellac vs. lacquer vs. polyurethane)
+- Hardware identification (brass vs. bronze vs. nickel-plated steel)
+
+REAL EXAMPLE:
+  Vision API output: "Wood table, dark color, visible grain"
+  Without KB: Agent 1 passes vague info to Agent 2
+  With KB: Agent 1 queries: "Dark wood with straight grain characteristics"
+           Retrieves: Walnut vs. Mahogany comparison chart
+           Refines diagnosis: "Likely Walnut (1960s Mid-Century Modern)"
+           Agent 2 now has precise context for historically accurate restoration
+
+================================================================================
+4. PRODUCT & MATERIAL RECOMMENDATIONS
+================================================================================
+
+ISSUE: There are hundreds of products for furniture restoration (strippers, 
+stains, finishes, adhesives). The wrong product can damage furniture or create 
+incompatible finish layers.
+
+WHY LLM ALONE FAILS:
+- Product knowledge is time-sensitive (brands, formulations change)
+- LLMs may recommend discontinued products or wrong product categories
+- Cannot map damage types to specific product requirements
+- May miss compatibility issues (e.g., oil-based stain under water-based poly)
+
+WHAT THE KNOWLEDGE BASE PROVIDES:
+- Product categories with use cases, dry times, compatibility
+- Brand examples (e.g., "Minwax Wood Putty" for nail holes, not large voids)
+- Application instructions specific to each product type
+- Safety data for each chemical (flammability, ventilation needs)
+
+REAL EXAMPLE:
+  Agent 2 determines: "Need to fill deep gouge in oak tabletop"
+  Without KB: Recommends generic "wood filler" (may shrink, crack, or not stain)
+  With KB: Queries: "Best filler for deep damage in oak"
+           Retrieves: "Two-part epoxy filler (Abatron WoodEpox) for structural 
+                      repairs, very hard, sandable, does not shrink"
+           Shopping list includes correct product for load-bearing repair
+
+================================================================================
+5. PREVENTING HALLUCINATIONS & MISINFORMATION
+================================================================================
+
+ISSUE: The "Weekend Warrior" user persona has basic DIY skills but lacks 
+professional knowledge. Incorrect advice could ruin valuable vintage furniture.
+
+WHY LLM ALONE FAILS:
+- LLMs can confidently hallucinate plausible-sounding but incorrect techniques
+- May mix restoration advice with furniture refinishing (different goals)
+- Cannot distinguish between historical preservation vs. modern updating
+- Might recommend techniques that devalue antiques (e.g., stripping original finish)
+
+WHAT THE KNOWLEDGE BASE PROVIDES:
+- Curated, fact-checked information from restoration manuals
+- Explicit distinction between "restore original finish" vs. "strip and refinish"
+- Era-appropriate techniques (e.g., French polish for Victorian pieces)
+- Source attribution (metadata: source = "Historical Furniture Conservation Institute")
+
+REAL EXAMPLE:
+  User: "Should I strip the finish on my 1890s oak dresser?"
+  Without KB: LLM might say "yes, use chemical stripper" (loses historical value!)
+  With KB: Retrieves: "RESTORE if: Original finish intact but dull... Historical 
+           value in preserving original finish"
+           Recommends: "Clean with mineral spirits, re-amalgamate shellac with 
+                       denatured alcohol" - preserves antique value
+
+================================================================================
+6. METADATA-DRIVEN AGENT COORDINATION
+================================================================================
+
+ISSUE: RestorAI has 3 agents (Diagnostician, Craftsman, Project Manager) that 
+need to coordinate. Each agent needs different information at different stages.
+
+WHY LLM ALONE FAILS:
+- Cannot efficiently route specific information to specific agents
+- No way to prioritize safety constraints over technique options
+- Difficult to filter by difficulty level for user skill matching
+
+WHAT THE KNOWLEDGE BASE PROVIDES:
+- Rich metadata (10+ tags per chunk) enables precision retrieval:
+    * Agent 1: content_category=identification, process_type=diagnosis
+    * Agent 2: damage_type=water_damage, material_type=wood, safety_level=high
+    * Agent 3: content_category=products, difficulty_level=easy
+
+REAL EXAMPLE:
+  Agent 2 needs to check if a technique is safe:
+  Without KB: Parses entire LLM response for safety mentions (unreliable)
+  With KB: metadata_filter={"safety_level": "high_caution", "material_type": "veneer"}
+           Returns: Only critical safety constraints for veneer
+           Agent 2 enforces: NO_SANDING constraint in output plan
+
+================================================================================
+7. USER SKILL LEVEL MATCHING
+================================================================================
+
+ISSUE: The "Weekend Warrior" persona needs easy-to-follow instructions, while 
+the "Reseller (Marcus)" persona can handle more complex techniques.
+
+WHY LLM ALONE FAILS:
+- Cannot consistently gauge technique difficulty
+- May provide professional-level advice requiring specialized tools
+- Might recommend techniques beyond user's stated skill level
+
+WHAT THE KNOWLEDGE BASE PROVIDES:
+- difficulty_level metadata (easy, medium, hard)
+- Tool requirements explicitly stated
+- Alternative techniques ranked by complexity
+
+REAL EXAMPLE:
+  Water ring removal techniques:
+    Easy: Iron and cloth method (metadata: difficulty_level=easy)
+    Medium: Shellac re-amalgamation (difficulty_level=medium)
+    Hard: French polishing (difficulty_level=hard)
+  
+  Agent 2 filters: difficulty_level IN [easy, medium] for Weekend Warrior
+  Result: Recommends iron method, excludes professional techniques
+
+================================================================================
+CONCLUSION
+================================================================================
+
+RestorAI's knowledge base is not optional enhancement—it is ESSENTIAL because:
+
+1. SAFETY: Prevents dangerous recommendations (chemical burns, fires, toxic exposure)
+2. ACCURACY: Provides verified, structured procedures instead of hallucinated advice  
+3. PRECISION: Material identification support for Vision Agent diagnosis
+4. SPECIFICITY: Exact product recommendations with compatibility information
+5. RELIABILITY: Fact-checked restoration techniques from curated sources
+6. COORDINATION: Metadata-driven information routing between agents
+7. PERSONALIZATION: Difficulty filtering matches user skill levels
+
+WITHOUT THIS KNOWLEDGE BASE: RestorAI would be an unreliable chatbot that gives 
+generic, potentially dangerous furniture advice mixed with hallucinations.
+
+WITH THIS KNOWLEDGE BASE: RestorAI becomes a trustworthy, specialized expert 
+system that bridges the gap between "I found damaged furniture" and "I have a 
+professional restoration plan" - fulfilling its core value proposition for the 
+"Thrift Flip" and upcycling market.
+
+The pre-trained LLM provides language understanding and reasoning, but the 
+knowledge base provides DOMAIN GROUNDING that makes the system actually work 
+for furniture restoration.

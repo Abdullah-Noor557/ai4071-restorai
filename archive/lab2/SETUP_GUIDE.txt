@@ -1,0 +1,164 @@
+RestorAI - Lab 2 Setup Guide
+=============================
+
+Student: Abdullah Noor - 2022029
+Date: February 16, 2026
+
+QUICK START GUIDE
+=================
+
+Step 1: Install Python Dependencies
+------------------------------------
+Open PowerShell in the project directory and run:
+
+    pip install -r requirements.txt
+
+This installs:
+- chromadb (vector database)
+- openai (for embeddings)
+- pandas, tqdm (utilities)
+
+Step 2: Set OpenAI API Key
+---------------------------
+You need an OpenAI API key to generate embeddings.
+
+Option A: Environment Variable (Recommended)
+In PowerShell:
+    $env:OPENAI_API_KEY="your_actual_api_key_here"
+
+Option B: .env File
+Create a file named .env in the project root:
+    OPENAI_API_KEY=your_actual_api_key_here
+
+Get your API key from: https://platform.openai.com/api-keys
+
+Step 3: Run Data Ingestion
+---------------------------
+    python ingest_data.py
+
+This will:
+1. Read all restoration guide files from data/restoration_guides/
+2. Clean and chunk the text semantically
+3. Add 10+ metadata tags to each chunk
+4. Generate embeddings using text-embedding-3-small
+5. Store everything in ChromaDB (./chroma_db/ folder)
+
+Expected output:
+- Files processed: 5
+- Total chunks: ~45-50
+- Automatic test query at the end
+
+Step 4: Verify Installation
+----------------------------
+After ingestion completes, you should see:
+- A new folder: chroma_db/ (contains vector database)
+- Sample query results showing water ring removal technique
+
+Step 5: Test Retrieval (Optional)
+----------------------------------
+Open Python interpreter:
+
+    python
+
+Then run:
+
+    from ingest_data import RestorationDataIngestion
+    
+    ingestion = RestorationDataIngestion(
+        data_directory="./data/restoration_guides",
+        collection_name="restoration_knowledge"
+    )
+    
+    # Test basic query
+    results = ingestion.query_test(
+        query="How do I remove water rings?",
+        n_results=2
+    )
+    
+    for r in results:
+        print(r['metadata']['section_name'])
+        print(r['document'][:200])
+        print()
+    
+    # Test metadata filtering (Lab 2 requirement)
+    safe_results = ingestion.query_test(
+        query="safety precautions",
+        n_results=2,
+        metadata_filter={"safety_level": "high_caution"}
+    )
+    
+    for r in safe_results:
+        print(r['metadata']['section_name'])
+        print(r['metadata']['safety_level'])
+
+TROUBLESHOOTING
+===============
+
+Problem: "ModuleNotFoundError: No module named 'chromadb'"
+Solution: Run: pip install -r requirements.txt
+
+Problem: "openai.AuthenticationError"
+Solution: Check your OPENAI_API_KEY environment variable is set correctly
+
+Problem: "No such file or directory: './data/restoration_guides'"
+Solution: Verify the data folder exists with the 5 .txt files
+
+Problem: ChromaDB permission error on Windows
+Solution: Run PowerShell as Administrator
+
+SUBMISSION CHECKLIST
+====================
+
+For Lab 2 submission, ensure you have:
+
+✓ ingest_data.py - Main ingestion script with:
+  - Domain-specific cleaning (clean_text method)
+  - Semantic chunking (semantic_chunking method)
+  - 10+ metadata tags per chunk (_create_chunk_metadata method)
+  - OpenAI embedding generation
+  - ChromaDB storage
+
+✓ retrieval_test.md - Documentation with:
+  - 3 test queries
+  - At least one using metadata filtering
+  - Expected outputs
+  - Performance metrics
+
+✓ grounding_justification.txt - Explanation of:
+  - Why RestorAI needs this knowledge base
+  - 7 specific reasons with examples
+  - Safety, accuracy, precision arguments
+
+✓ requirements.txt - All Python dependencies
+
+✓ data/restoration_guides/ - 5 restoration guide files:
+  - wood_repair_techniques.txt
+  - material_identification.txt
+  - finishing_techniques.txt
+  - safety_hazards.txt
+  - products_materials.txt
+
+✓ chroma_db/ - Generated after running ingest_data.py
+
+ASSESSMENT CRITERIA
+===================
+
+Domain Grounding (4 points):
+- Data choice aligned with furniture restoration domain ✓
+- Covers materials, techniques, safety, products ✓
+
+Metadata Quality (3 points):
+- 10+ metadata tags per chunk (exceeds requirement of 3) ✓
+- Enables filtering by safety, difficulty, material, damage ✓
+- Demonstrated with metadata-filtered query ✓
+
+Viva Preparation (3 points):
+- Can explain why domain-specific knowledge is needed ✓
+- Can demonstrate semantic chunking strategy ✓
+- Can show metadata filtering for agent coordination ✓
+
+CONTACT
+=======
+Abdullah Noor
+Student ID: 2022029
+Project: RestorAI (The Furniture Flip Planner)

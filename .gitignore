@@ -1,0 +1,57 @@
+# =============================================================================
+# RestorAI - .gitignore
+# =============================================================================
+
+# -- Secrets / local environment ---------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+
+# -- Python -------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# -- Virtual envs -------------------------------------------------------------
+.venv/
+venv/
+env/
+
+# -- Test / type-check / lint caches -----------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# -- Local persistent data (must come from a volume in production) -----------
+chroma_db/
+data/checkpoints.sqlite
+data/checkpoints.sqlite*
+data/orders/
+orders/
+*.sqlite
+*.sqlite3
+
+# Keep the eval results visible in PRs / CI artefacts but never committed.
+eval_results.json
+
+# -- Editor / OS metadata -----------------------------------------------------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# -- Misc ---------------------------------------------------------------------
+*.log
+*.tmp
+*.zip

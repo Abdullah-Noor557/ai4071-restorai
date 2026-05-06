@@ -1,0 +1,157 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                    RestorAI - QUICK START GUIDE                    ║
+║                   Fix the API Key Error in 2 Minutes               ║
+╚════════════════════════════════════════════════════════════════════╝
+
+You're getting this error:
+  "The api_key client option must be set either by passing api_key..."
+
+This means your OpenAI API key is not configured. Here's how to fix it:
+
+═══════════════════════════════════════════════════════════════════
+OPTION 1: Set Environment Variable (EASIEST - Recommended)
+═══════════════════════════════════════════════════════════════════
+
+Windows PowerShell (what you're probably using):
+------------------------------------------------
+1. Get your OpenAI API key from: https://platform.openai.com/api-keys
+   (You'll need to sign up if you don't have an account)
+
+2. In PowerShell, run this command (replace with your actual key):
+   
+   $env:OPENAI_API_KEY="sk-proj-your_actual_key_here"
+
+3. Verify it's set:
+   
+   echo $env:OPENAI_API_KEY
+
+4. Now run the ingestion again:
+   
+   python ingest_data.py
+
+Note: This only lasts for your current PowerShell session.
+If you close PowerShell, you'll need to set it again.
+
+═══════════════════════════════════════════════════════════════════
+OPTION 2: Create a .env File (PERMANENT - Best for Development)
+═══════════════════════════════════════════════════════════════════
+
+1. In your project folder (D:\AI Lab Final), create a file named: .env
+   (Yes, just ".env" with no name before the dot)
+
+2. Open it in Notepad or any text editor
+
+3. Add this line (replace with your actual key):
+   
+   OPENAI_API_KEY=sk-proj-your_actual_key_here
+
+4. Save the file
+
+5. Run the ingestion:
+   
+   python ingest_data.py
+
+The script will automatically load the key from the .env file.
+
+Tip: There's a .env.template file you can copy and rename!
+
+═══════════════════════════════════════════════════════════════════
+OPTION 3: Windows Command Prompt
+═══════════════════════════════════════════════════════════════════
+
+If you're using cmd.exe instead of PowerShell:
+
+   set OPENAI_API_KEY=sk-proj-your_actual_key_here
+   python ingest_data.py
+
+═══════════════════════════════════════════════════════════════════
+GETTING YOUR OPENAI API KEY
+═══════════════════════════════════════════════════════════════════
+
+1. Go to: https://platform.openai.com/api-keys
+
+2. Sign in (or create an account if you don't have one)
+
+3. Click "Create new secret key"
+
+4. Give it a name like "RestorAI Lab 2"
+
+5. Copy the key (it starts with "sk-proj-...")
+   IMPORTANT: Save it somewhere safe! You can only see it once.
+
+6. Use this key in one of the options above
+
+Cost Info:
+---------
+- The text-embedding-3-small model is very cheap
+- Processing these 5 files will cost approximately $0.01-0.02
+- You get free credits when you first sign up
+
+═══════════════════════════════════════════════════════════════════
+COMPLETE SETUP PROCESS
+═══════════════════════════════════════════════════════════════════
+
+1. Install dependencies (if you haven't already):
+   
+   pip install -r requirements.txt
+
+2. Set your API key (use Option 1 or 2 above)
+
+3. Run the ingestion:
+   
+   python ingest_data.py
+
+4. Expected output:
+   ✓ Processing 5 restoration guide files
+   ✓ Creating ~45-50 semantic chunks
+   ✓ Generating embeddings
+   ✓ Storing in ChromaDB
+   ✓ Running sample test query
+
+5. You should see a new folder created: chroma_db/
+
+═══════════════════════════════════════════════════════════════════
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════
+
+Problem: "pip is not recognized"
+Solution: Use "python -m pip install -r requirements.txt"
+
+Problem: "ModuleNotFoundError: No module named 'openai'"
+Solution: Run "pip install -r requirements.txt" first
+
+Problem: Still getting API key error after setting it
+Solution: 
+  - Close and reopen PowerShell
+  - Make sure there are no spaces around the = sign in .env file
+  - Check you copied the full key (starts with sk-proj- or sk-)
+
+Problem: "openai.AuthenticationError: Invalid API key"
+Solution: Your key is incorrect. Double-check you copied it correctly.
+
+Problem: Can't create .env file in Windows
+Solution:
+  - Open Notepad
+  - Type: OPENAI_API_KEY=your_key_here
+  - Save As → File name: ".env" (with quotes)
+  - Save as type: "All Files"
+
+═══════════════════════════════════════════════════════════════════
+SECURITY REMINDER
+═══════════════════════════════════════════════════════════════════
+
+⚠️ NEVER commit your .env file to Git!
+⚠️ NEVER share your API key publicly!
+⚠️ If you accidentally expose it, revoke it immediately at:
+   https://platform.openai.com/api-keys
+
+═══════════════════════════════════════════════════════════════════
+NEED MORE HELP?
+═══════════════════════════════════════════════════════════════════
+
+See the detailed documentation in:
+- SETUP_GUIDE.txt (step-by-step setup)
+- README.md (comprehensive documentation)
+
+Student: Abdullah Noor (2022029)
+Project: RestorAI - Lab 2

@@ -1,0 +1,151 @@
+FURNITURE RESTORATION GUIDE - MATERIAL IDENTIFICATION
+Source: Historical Furniture Conservation Institute
+Last Updated: February 2026
+Category: Material Guide
+Priority: High
+
+=== WOOD TYPES ===
+
+SOLID WOOD vs VENEER
+Visual Test:
+- Solid wood: grain patterns continue around all edges
+- Veneer: thin layer shows edge banding or substrate
+
+Weight Test:
+- Solid hardwood: significantly heavier
+- Veneer over particle board/MDF: lighter
+
+Common Vintage Woods:
+
+OAK (Red & White)
+Characteristics: Prominent grain, open pores, heavy
+Color: Light tan to reddish-brown
+Era: 1880s-1940s (Golden Oak era)
+Grain Pattern: Pronounced rays and cathedral patterns
+Best for: Structural pieces, Mission style furniture
+
+WALNUT
+Characteristics: Straight grain, fine texture, rich color
+Color: Dark chocolate to purplish-brown
+Era: 1700s-1850s (Colonial), 1960s-70s (Mid-Century)
+Grain Pattern: Generally straight with occasional swirl
+Best for: High-end furniture, veneers
+
+MAHOGANY
+Characteristics: Medium to coarse texture, reddish color
+Color: Reddish-brown to deep red
+Era: 1750-1850 (Federal period), 1920s-30s
+Grain Pattern: Interlocked or straight, ribbon stripe
+Best for: Fine furniture, carved details
+
+MAPLE (Hard Maple)
+Characteristics: Fine, even texture, very hard
+Color: Creamy white to light reddish-brown
+Era: 1700s-1800s (Colonial), 1950s-60s (Modern)
+Grain Pattern: Generally straight, sometimes curly or bird's eye
+Best for: Chairs, tabletops, turned legs
+
+PINE (White, Yellow, Heart)
+Characteristics: Soft, lightweight, prominent growth rings
+Color: Pale yellow to reddish-brown
+Era: 1700s-1900s (Country furniture)
+Grain Pattern: Straight with visible growth rings
+Best for: Rustic furniture, painted pieces
+
+CHERRY
+Characteristics: Fine, straight grain, ages beautifully
+Color: Light pinkish-brown, darkens with age
+Color: Reddish-brown when aged
+Era: 1750-1850 (American Federal), Modern reproductions
+Grain Pattern: Fine, closed grain, straight
+Best for: Fine furniture, premium pieces
+
+=== FINISH TYPES ===
+
+SHELLAC
+Appearance: Warm, amber glow
+Test: Dissolves with denatured alcohol
+Era: Pre-1920s common, still used today
+Repair: Re-amalgamate with alcohol, French polish
+
+LACQUER
+Appearance: Clear, hard, glossy
+Test: Dissolves with lacquer thinner
+Era: 1920s onward
+Repair: Must strip and refinish, cannot touch up easily
+
+VARNISH (Oil-based)
+Appearance: Thick, durable, yellows with age
+Test: Resistant to alcohol, softens with paint stripper
+Era: 1850s onward
+Repair: Sand and recoat, or strip completely
+
+POLYURETHANE
+Appearance: Plastic-like, very durable
+Test: Resistant to most solvents
+Era: 1960s onward
+Repair: Sand between coats, requires complete removal for refinishing
+
+OIL FINISH (Tung, Linseed, Danish)
+Appearance: Low sheen, natural look
+Test: Penetrates wood, not surface film
+Era: Traditional and modern
+Repair: Clean and reapply additional coats
+
+WAX
+Appearance: Low luster, soft feel
+Test: Soft, easily scratched, melts with heat
+Era: Traditional maintenance finish
+Repair: Clean and reapply
+
+=== HARDWARE & METALS ===
+
+BRASS
+Characteristics: Yellow-gold color, tarnishes green
+Era: All periods
+Identification: Non-magnetic, heavier than steel
+Cleaning: Brass polish, vinegar and salt paste
+
+BRONZE
+Characteristics: Reddish-brown, develops patina
+Era: High-end antiques
+Identification: Very heavy, non-magnetic
+Cleaning: Gentle soap, preserve patina
+
+IRON (Cast, Wrought)
+Characteristics: Black or rusty, magnetic
+Era: 1800s-early 1900s
+Identification: Magnetic, rusts
+Treatment: Remove rust, apply protective coating
+
+STEEL (Nickel-plated)
+Characteristics: Bright silver, magnetic
+Era: 1920s-1940s
+Identification: Magnetic, chrome-like appearance
+Restoration: Re-plate if worn, or polish
+
+=== DAMAGE IDENTIFICATION ===
+
+OXIDATION
+Appearance: Darkening, black spots, dull finish
+Cause: Exposure to air and moisture
+Material: All woods and finishes
+Solution: Clean with appropriate solvent, refinish if severe
+
+CHECKING (Alligatoring)
+Appearance: Network of fine cracks in finish
+Cause: Incompatible finish layers, age, temperature changes
+Material: Lacquer, varnish
+Solution: Strip and refinish
+
+CLOUDINESS
+Appearance: Milky, hazy finish
+Cause: Moisture trapped in finish
+Material: Lacquer, shellac
+Solution: Re-amalgamate or buff with compounds
+
+WOODWORM/BEETLE DAMAGE
+Appearance: Small round holes, powder residue
+Cause: Wood-boring insects
+Material: Solid wood
+Solution: Treat with borate solution, fill holes if active infestation stopped

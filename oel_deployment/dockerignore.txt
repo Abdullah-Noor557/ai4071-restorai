@@ -1,0 +1,71 @@
+# =============================================================================
+# .dockerignore - excluded from the build context.
+# Goal: keep the image lean AND prevent secrets / local state leaking in.
+# =============================================================================
+
+# -- Secrets / local environment ---------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+
+# -- Local virtual envs / caches ---------------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# -- Local persistent data (must come from a volume in production) -----------
+chroma_db/
+data/checkpoints.sqlite
+data/checkpoints.sqlite*
+orders/
+*.sqlite
+*.sqlite3
+
+# -- IDE / OS metadata --------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# -- Git, CI and docs we don't need at runtime --------------------------------
+.git/
+.gitignore
+.github/
+docs/
+*.md
+!app/**/*.md
+README.md
+
+# -- Lab / report folders kept out of the runtime image ----------------------
+lab3/
+mid_exam_submission/
+archive/
+oel_quality_gates/
+oel_deployment/
+lab4_api/
+tests/
+*.zip
+*.pdf
+
+# -- Build artifacts ----------------------------------------------------------
+build/
+dist/
+*.egg-info/
+node_modules/
+
+# -- Misc ---------------------------------------------------------------------
+*.log
+*.tmp
+TODO
+NOTES

@@ -1,0 +1,96 @@
+# RestorAI - Lab 3: Multi-Agent System Dependencies
+# LangGraph, LangChain, and Agent Framework
+# Author: Abdullah Noor - 2022029
+
+# ============================================================================
+# Core Lab 3 Dependencies (NEW)
+# ============================================================================
+
+# LangGraph - Agent orchestration framework
+langgraph==0.2.45
+# StateGraph, conditional edges, checkpointing
+
+# LangChain Core - Base classes and tools
+langchain-core==0.3.21
+# Tool decorator, message types, base classes
+
+# LangChain OpenAI - OpenAI integration
+langchain-openai==0.2.8
+# ChatOpenAI for LLM calls with tool binding
+
+# Google Generative AI - Vision analysis (Gemini)
+google-generativeai==0.8.3
+# For Tool 1: Vision analysis of furniture images
+
+# Pillow - Image processing
+Pillow==11.0.0
+# Required for loading and processing images for Gemini
+
+# ============================================================================
+# Lab 2 Dependencies (REQUIRED - from previous lab)
+# ============================================================================
+
+# Vector Database
+chromadb==0.5.23
+# ChromaDB for RAG tool (search_restoration_knowledge)
+
+# OpenAI API for embeddings
+openai==1.58.1
+# Used for generating embeddings in knowledge base queries
+
+# Environment variables
+python-dotenv==1.0.1
+# For managing API keys
+
+# ============================================================================
+# Utilities
+# ============================================================================
+
+# Progress tracking
+tqdm==4.67.1
+# Progress bars for batch operations
+
+# Data manipulation
+pandas==2.2.3
+# For analyzing agent performance metrics
+
+# Testing
+pytest==8.3.4
+# Unit testing for tools and graph
+
+# ============================================================================
+# Optional: Graph Visualization
+# ============================================================================
+
+# pygraphviz==1.14
+# Uncomment for graph visualization (requires graphviz system install)
+# Install graphviz first: https://graphviz.org/download/
+
+# ============================================================================
+# Installation Instructions
+# ============================================================================
+
+# Install all dependencies:
+#   pip install -r requirements_lab3.txt
+
+# Or upgrade from Lab 2:
+#   pip install -r requirements_lab3.txt --upgrade
+
+# Required Environment Variables:
+#   OPENAI_API_KEY=your_openai_key       (Required)
+#   GOOGLE_API_KEY=your_gemini_key       (Optional - for vision)
+
+# Verify installation:
+#   python -c "import langgraph; print('LangGraph:', langgraph.__version__)"
+#   python -c "import google.generativeai; print('Gemini: OK')"
+
+# ============================================================================
+# Version Notes
+# ============================================================================
+
+# Python: 3.10+ required
+# LangGraph: 0.2.x (latest stable)
+# OpenAI: 1.x (v1 API)
+# Google AI: 0.8.x (Gemini 1.5)
+
+# These versions are tested and compatible as of February 2026

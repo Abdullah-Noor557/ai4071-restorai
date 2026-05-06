@@ -1,0 +1,73 @@
+╔════════════════════════════════════════════════════════════════════╗
+║           HOW TO RUN LAB 3 - READ THIS FIRST!                     ║
+╚════════════════════════════════════════════════════════════════════╝
+
+You're getting "OPENAI_API_KEY not set" because the key needs to be 
+set in YOUR CURRENT PowerShell session.
+
+═══════════════════════════════════════════════════════════════════
+SOLUTION: Copy and paste these commands IN ORDER
+═══════════════════════════════════════════════════════════════════
+
+1. Navigate to lab3 folder:
+
+cd "D:\AI Lab Final\lab3"
+
+2. Set your API key (REPLACE with your actual key!):
+
+$env:OPENAI_API_KEY="sk-proj-YOUR_ACTUAL_KEY_HERE"
+
+3. Run the demo:
+
+python run_demo.py
+
+═══════════════════════════════════════════════════════════════════
+
+That's it! The agent will now use tools and generate a restoration plan.
+
+IMPORTANT: Replace "sk-proj-YOUR_ACTUAL_KEY_HERE" with your REAL 
+OpenAI API key from: https://platform.openai.com/api-keys
+
+═══════════════════════════════════════════════════════════════════
+WHAT YOU SHOULD SEE
+═══════════════════════════════════════════════════════════════════
+
+[STEP 1] Agent calling tools:
+  - search_restoration_knowledge
+    Args: {'query': 'how to remove water rings from walnut wood'...
+
+[OK] search_restoration_knowledge completed
+
+[STEP 2] Agent calling tools:
+  - search_restoration_knowledge
+    Args: {'query': 'safety precautions', 'safety_only': True}
+
+[OK] search_restoration_knowledge completed
+
+[STEP 3] Agent calling tools:
+  - search_web_for_products
+    Args: {'query': 'furniture restoration products'}
+
+[OK] search_web_for_products completed
+
+[STEP 4] Agent generated final plan
+
+[FINAL OUTPUT]
+RESTORATION PLAN: Vintage Wooden Table (Water Ring Damage)
+...complete guide with shopping list...
+
+═══════════════════════════════════════════════════════════════════
+ALTERNATE METHOD: PowerShell Script
+═══════════════════════════════════════════════════════════════════
+
+Run this to be prompted for your API key:
+
+.\set_keys_and_run.ps1
+
+(This will ask for your key and run the demo automatically)
+
+═══════════════════════════════════════════════════════════════════
+
+Questions? See SETUP_AND_RUN.txt for detailed troubleshooting.
+
+Student: Abdullah Noor (2022029)
